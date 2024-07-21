@@ -3,9 +3,10 @@
 ## Heart Disease Prediction
 This repository contains a machine learning project aimed at predicting the presence of heart disease using the heart disease dataset.
 Table of Contents
-- Introduction
+- Introduction[#Introduction]
 - Dataset
 - Models
+- Contributing
 - Results
 
 ## Introduction: 
@@ -25,6 +26,9 @@ The following machine learning models were used in this project:
 - AdaBoost Classifier
 - Gaussian Naïve Bayes Classifier
 - Gradient Boosting Classifier
+
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
 ## Results
 The performance of the models was evaluated using accuracy, precision, recall, and F1-score. The model is made using the Random Forest classifier with 84% accuracy.
