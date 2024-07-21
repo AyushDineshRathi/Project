@@ -3,11 +3,11 @@
 ## Heart Disease Prediction
 This repository contains a machine learning project aimed at predicting the presence of heart disease using the heart disease dataset.
 Table of Contents
-- Introduction[#Introduction]
-- Dataset
-- Models
-- Contributing
-- Results
+- [Introduction](#Introduction)
+- [Dataset](#Dataset)
+- [Models](#Models)
+- [Contributing](#Contributing)
+- [Results](#Results)
 
 ## Introduction: 
 Heart disease is a leading cause of death worldwide. Early prediction of heart disease can help in taking preventive measures and improving patient outcomes. This project uses machine learning techniques to predict the presence of heart disease based on various medical attributes.
