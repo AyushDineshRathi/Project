@@ -1,0 +1,99 @@
+# Kharcha Kitna - Project-level .gitignore
+# Recommended ignores for Node (client + any server/static Node packages), Python (ML), build artifacts, IDEs, OS files, and model/data artifacts.
+
+# --------------------
+# Node
+# --------------------
+# Node modules (do not commit)
+node_modules/
+**/node_modules/
+
+# Vite/webpack/parcel/etc build outputs
+/client/dist/
+/client/.vite/
+client/build/
+dist/
+build/
+
+# npm/yarn/pnpm debug logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+logs/
+
+# Environment files (may contain secrets)
+.env
+.env.local
+.env.*.local
+
+# --------------------
+# Python
+# --------------------
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Packaging/build artifacts
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# --------------------
+# Model & large artifact files
+# --------------------
+# Common ML formats (do not commit large model binaries)
+*.sav
+*.joblib
+*.pth
+*.pt
+
+# Specific trained model in this project
+/server/MLmodel/trained_model.sav
+
+# If you'd like to keep small example CSVs tracked, remove or adjust the rules below.
+# Ignore directories often used to store large datasets
+/data/
+*.csv.gz
+
+# --------------------
+# Server static / other
+# --------------------
+/server/static/node_modules/
+/server/static/dist/
+
+# --------------------
+# IDEs, OS, misc
+# --------------------
+# macOS/Windows
+.DS_Store
+Thumbs.db
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+
+# Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs, db, coverage
+*.log
+*.sqlite3
+*.db
+coverage/
+coverage/**
+
+# End of file
