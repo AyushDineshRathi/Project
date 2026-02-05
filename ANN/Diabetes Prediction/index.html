@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Input Form</h2>
+        <form action="{{url_for('home')}}" method="post">
+            <div class="form-group">
+                <label for="pregnancies">Pregnancies:</label>
+                <input type="number" id="pregnancies" name="pregnancies" required>
+            </div>
+            <div class="form-group">
+                <label for="Glucose">Glucose:</label>
+                <input type="number" id="Glucose" name="Glucose" required>
+            </div>
+            <div class="form-group">
+                <label for="BP">Blood Pressure:</label>
+                <input type="number" id="BP" name="BP" required>
+            </div>
+            <div class="form-group">
+                <label for="skin">Skin Thickness:</label>
+                <input type="number" id="skin" name="skin">
+            </div>
+            <div class="form-group">
+                <label for="insulin">Insulin:</label>
+                <input type="number" id="insulin" name="insulin">
+            </div>
+            <div class="form-group">
+                <label for="bmi">BMI:</label>
+                <input type="number" id="bmi" name="bmi">
+            </div>
+            <div class="form-group">
+                <label for="pedgree">Diabetes Pedgree Function:</label>
+                <input type="number" id="pedgree" name="pedgree">
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+<!-- <script>
+    let form = document.querySelector("form")
+
+    
+    form.addEventListener("submit", (e) => {
+        e.preventDefault()
+        const formData = new FormData(form)
+
+        for (const [key, value] of formData.entries()) {
+            console.log(`${key}: ${value}`)
+        }
+    })
+</script> -->
+</html>
